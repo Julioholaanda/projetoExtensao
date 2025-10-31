@@ -1,0 +1,51 @@
+/* ===== Fundo com a imagem ===== */
+body {
+  background-image: url('https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-repeat: no-repeat;  /* evita repetição */
+  background-attachment: fixed;  /* fixa o fundo ao rolar */
+  font-family: 'Poppins', sans-serif;
+} 
+
+/* ===== Divider ===== */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+/* ===== Altura personalizada ===== */
+.h-custom {
+  height: calc(100% - 100px);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+/* ===== Caixa do formulário ===== */
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
