@@ -1,0 +1,94 @@
+.fundocadas {
+  background-image: url('https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-repeat: no-repeat;  /* evita repetição */
+  background-attachment: fixed;  /* fixa o fundo ao rolar */
+  font-family: 'Poppins', sans-serif;
+} 
+:root{
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --accent:#2b7cff;
+    --muted:#6b7280;
+    --danger:#e05353;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body{
+    margin:0;
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(180deg,var(--bg),#eef2f8);
+    padding:24px;
+}
+.card{
+    width:100%;
+    max-width:420px;
+    background:var(--card);
+    border-radius:12px;
+    box-shadow:0 6px 24px rgba(18,38,63,0.08);
+    padding:28px;
+}
+h1{
+    margin:0 0 6px 0;
+    font-size:20px;
+    letter-spacing:0.2px;
+}
+p.lead{
+    margin:0 0 18px 0;
+    color:var(--muted);
+    font-size:13px;
+}
+form{display:flex;flex-direction:column;gap:12px;}
+label{
+    font-size:13px;
+    color:#111827;
+    display:block;
+    margin-bottom:6px;
+}
+.field{
+    display:flex;
+    flex-direction:column;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+    padding:10px 12px;
+    border:1px solid #e6e9ef;
+    border-radius:8px;
+    font-size:14px;
+    outline:none;
+    transition:box-shadow .12s, border-color .12s;
+}
+input:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 4px rgba(43,124,255,0.08);
+}
+.small{
+    font-size:12px;color:var(--muted);margin-top:6px;
+}
+.row{
+    display:flex;gap:10px;
+}
+.row .col{flex:1;}
+.btn{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    font-size:15px;
+}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.error{
+    color:var(--danger);
+    font-size:13px;
+    margin-top:6px;
+}
+@media (max-width:460px){
+    .card{padding:20px}
+}
