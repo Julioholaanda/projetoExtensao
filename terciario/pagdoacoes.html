@@ -164,7 +164,7 @@
             <button class="amount">R$ 20</button>
             <button class="amount">R$ 50</button>
             <button class="amount">R$ 100</button>
-            <button class="amount">Outra doação</button>
+            <button id="outraDoacaoBtn" class="amount">Outra doação</button>
         </div>
 
         <h3>Informações do doador</h3>
@@ -190,6 +190,14 @@
     </div>
 
 </div>
+
+<script>
+    // Redirecionar ao clicar em "Outra doação"
+    document.getElementById('outraDoacaoBtn').addEventListener('click', function() {
+        // Coloque o caminho da página para doar roupas, calçados, brinquedos, etc.
+        window.location.href = 'outrasdoacoes.html';
+    });
+</script>
 
 </body>
 </html>
