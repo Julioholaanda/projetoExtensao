@@ -13,7 +13,7 @@
         font-family: Arial, sans-serif;
     }
 
-    /* FUNDO APLICADO CORRETAMENTE */
+    /* FUNDO */
     body {
         background: url("https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png") 
                     no-repeat center center fixed;
@@ -28,6 +28,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* Botão voltar */
+    .voltar-btn {
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.2s;
+        margin-right: 15px;
+    }
+
+    .voltar-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
     }
 
     .logout {
@@ -115,7 +132,7 @@
     }
 
     .donate-btn:hover {
-        background: #01a76f;
+        background: #01895c;
     }
 </style>
 
@@ -124,7 +141,10 @@
 <body>
 
 <header class="topbar">
-    <h2>ACNC – Doações</h2>
+    <div style="display: flex; align-items: center;">
+        <button class="voltar-btn" onclick="history.back()">⬅ Voltar</button>
+        <h2>ACNC – Doações</h2>
+    </div>
     <a href="login.html" class="logout">Sair</a>
 </header>
 

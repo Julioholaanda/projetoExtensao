@@ -29,24 +29,31 @@
       <!-- Formulário -->
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
-      <!-- FORM CORRETO + REDIRECIONAMENTO -->
-      <form onsubmit="event.preventDefault(); window.location.href='../terciario/pagdoacoes.html';">
+      <!-- FORM + REDIRECIONAMENTO -->
+      <form onsubmit="event.preventDefault(); window.location.href='../terciaria/pagdoacoes.html';">
+
 
         <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
           <p class="lead fw-normal mb-0 me-3">Entrar com</p>
 
           <!-- Google -->
-          <button type="button" class="btn btn-light btn-floating mx-1 p-2">
-            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" style="width: 20px;">
+         <button type="button" class="btn btn-light btn-floating mx-1 p-2"
+            onclick="window.location.href='loginFake/google.html'">
+           <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" style="width: 20px;">
           </button>
+
 
           <!-- Facebook -->
-          <button type="button" class="btn btn-light btn-floating mx-1 p-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="width: 20px;">
+          <button type="button" class="btn btn-light btn-floating mx-1 p-2"
+          onclick="window.location.href='loginFake/facebook.html'">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+             style="width: 20px;">
           </button>
 
+
           <!-- LinkedIn -->
-          <button type="button" class="btn btn-light btn-floating mx-1 p-2">
+          <button type="button" class="btn btn-light btn-floating mx-1 p-2"
+            onclick="window.location.href='loginFake/linkedin.html'">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 20px;">
           </button>
         </div>
@@ -78,7 +85,7 @@
         </div>
 
         <div class="text-center text-lg-start mt-4 pt-2">
-          <!-- BOTÃO LOGIN FUNCIONANDO -->
+          <!-- BOTÃO LOGIN -->
           <button type="submit" class="btn btn-primary btn-lg"
                   style="padding-left: 2.5rem; padding-right: 2.5rem;">
             Login
@@ -92,6 +99,15 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- FUNÇÃO DE REDIRECIONAMENTO -->
+<script>
+function redirecionar() {
+    // Caminho seguro — ajuste se precisar
+    window.location.href = "pagdoacoes.html";  
+}
+</script>
 
 </body>
 </html>
