@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doações - ACNC</title>
+
+<link rel="stylesheet" href="../css/doacoes.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div style="display: flex; align-items: center;">
+        <button class="voltar-btn" onclick="history.back()">⬅ Voltar</button>
+        <h2>ACNC – Doações</h2>
+    </div>
+    <a href="login.html" class="logout">Sair</a>
+</header>
+
+<div class="container">
+
+    <div class="donation-box">
+
+        <h1>Faça sua Doação</h1>
+        <p class="subtitle">
+            Sua ajuda transforma vidas na Associação de Crianças Nova Canaã ❤️
+        </p>
+
+        <h3>Escolha um valor</h3>
+
+        <div class="amount-options">
+            <button class="amount">R$ 10</button>
+            <button class="amount">R$ 20</button>
+            <button class="amount">R$ 50</button>
+            <button class="amount">R$ 100</button>
+            <button id="outraDoacaoBtn" class="amount">Outra doação</button>
+        </div>
+
+        <h3>Informações do doador</h3>
+
+        <form class="donation-form">
+
+            <label>Nome completo</label>
+            <input type="text" placeholder="Digite seu nome" required>
+
+            <label>E-mail</label>
+            <input type="email" placeholder="Digite um e-mail válido" required>
+
+            <label>Método de pagamento</label>
+            <select required>
+                <option value="">Selecione</option>
+                <option value="pix">PIX</option>
+                <option value="credito">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+            </select>
+
+            <button type="submit" class="donate-btn">Doar Agora</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    // Redirecionar ao clicar em "Outra doação"
+    document.getElementById('outraDoacaoBtn').addEventListener('click', function() {
+        window.location.href = 'outrasdoacoes.html';
+    });
+</script>
+
+</body>
+</html>

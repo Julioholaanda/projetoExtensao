@@ -9,52 +9,52 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
       rel="stylesheet">
 
-<link rel="stylesheet" href="visuallog.css">
+<link rel="stylesheet" href="../css/main.css">
 
 </head>
 <body>
 
-<section class="vh-100">
+<section class="login-section">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       
       <!-- Logo -->
-      <div class="col-md-9 col-lg-6 col-xl-5">
+      <div class="col-md-9 col-lg-6 col-xl-5 d-flex justify-content-center">
         <img src="https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png"
-              class="img-fluid"
-              alt="Logo"
-              style="width: 300px; height: auto;">
+            alt="Logo ACNC"
+            class="logo-img img-fluid">
       </div>
+
 
       <!-- Formulário -->
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
       <!-- FORM + REDIRECIONAMENTO -->
-      <form onsubmit="event.preventDefault(); window.location.href='../terciaria/pagdoacoes.html';">
+      <form onsubmit="event.preventDefault(); window.location.href='pagdoacoes.html';">
 
 
         <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
           <p class="lead fw-normal mb-0 me-3">Entrar com</p>
 
           <!-- Google -->
-         <button type="button" class="btn btn-light btn-floating mx-1 p-2"
-            onclick="window.location.href='loginFake/google.html'">
-           <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" style="width: 20px;">
+          <button type="button" class="btn btn-light btn-floating mx-1 p-2"
+                  onclick="window.location.href='../loginfake/google.html'">
+              <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" style="width: 20px;">
           </button>
 
 
           <!-- Facebook -->
           <button type="button" class="btn btn-light btn-floating mx-1 p-2"
-          onclick="window.location.href='loginFake/facebook.html'">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-             style="width: 20px;">
+                  onclick="window.location.href='../loginfake/facebook.html'">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                  style="width: 20px;">
           </button>
 
 
           <!-- LinkedIn -->
           <button type="button" class="btn btn-light btn-floating mx-1 p-2"
-            onclick="window.location.href='loginFake/linkedin.html'">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 20px;">
+                  onclick="window.location.href='../loginfake/linkedin.html'">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 20px;">
           </button>
         </div>
 

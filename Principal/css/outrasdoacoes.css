@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url("https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png") 
+             no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.topbar {
+  background: #01a76f;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.voltar-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+  margin-right: 15px;
+}
+
+.voltar-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.92);
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.donate-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #01a76f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.donate-btn:hover {
+  background: #01895c;
+}
