@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Outras Doações - ACNC</title>
+
+<link rel="stylesheet" href="../css/outrasdoacoes.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="voltar-btn" onclick="history.back()">⬅ Voltar</button>
+  <h2>ACNC – Outras Doações</h2>
+</header>
+
+<div class="container">
+  <h1>Doe roupas, calçados, brinquedos e muito mais</h1>
+
+  <form>
+    <label for="tipo-doacao">Tipo de doação</label>
+    <select id="tipo-doacao" required>
+      <option value="" disabled selected>Selecione o tipo</option>
+      <option value="roupas">Roupas</option>
+      <option value="calcados">Calçados</option>
+      <option value="brinquedos">Brinquedos</option>
+      <option value="outros">Outros</option>
+    </select>
+
+    <label for="quantidade">Quantidade aproximada</label>
+    <input type="text" id="quantidade" placeholder="Ex: 10 peças, 5 pares" required />
+
+    <label for="descricao">Descrição adicional</label>
+    <textarea id="descricao" placeholder="Detalhes adicionais (opcional)"></textarea>
+
+    <button type="submit" class="donate-btn">Enviar Doação</button>
+  </form>
+</div>
+
+</body>
+</html>
