@@ -38,7 +38,7 @@ form {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.404);
 }
 
 .btn-primary {
@@ -47,4 +47,36 @@ form {
 
 .btn-primary:hover {
   transform: scale(1.05);
+}
+
+.login-section {
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+/* ===== LOGO RESPONSIVA ===== */
+.logo-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 18px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.404);
+}
+
+/* Logo menor em telas pequenas */
+@media (max-width: 576px) {
+  .logo-img {
+    max-width: 200px;
+  }
+}
+
+/* Logo maior em telas maiores */
+@media (min-width: 1400px) {
+  .logo-img {
+    max-width: 350px;
+  }
 }

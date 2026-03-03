@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FUNDO */
+body {
+    background: url("https://acncdf.com/wp-content/uploads/2025/01/acnc-aaa.png") 
+                no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* BARRA DO TOPO */
+.topbar {
+    background: #01a76f;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botão voltar */
+.voltar-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    margin-right: 15px;
+}
+
+.voltar-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTEÚDO CENTRAL */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.donation-box {
+    background: rgba(255, 255, 255, 0.92);
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* BOTÕES DE VALOR */
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.amount {
+    background: #e6e6e6;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.amount:hover {
+    background: #ccc;
+}
+
+/* FORMULÁRIO */
+label {
+    margin-top: 15px;
+    display: block;
+    color: #444;
+    font-size: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    margin-top: 5px;
+}
+
+.donate-btn {
+    width: 100%;
+    padding: 14px;
+    background: #01a76f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.donate-btn:hover {
+    background: #01895c;
+}
